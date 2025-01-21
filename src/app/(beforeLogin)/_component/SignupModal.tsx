@@ -9,8 +9,12 @@ export default function SignupModal() {
   const [nickname, setNickname] = useState("");
   const [image, setImage] = useState("");
   const [imageFile, setImageFile] = useState<File>();
+
   const router = useRouter();
-  const onClickClose = () => {};
+  const onClickClose = () => {
+    router.back();
+  };
+
   const onChangeId = () => {};
   const onChangePassword = () => {};
   const onChangeNickname = () => {};
